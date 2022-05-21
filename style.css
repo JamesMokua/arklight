@@ -167,11 +167,14 @@
 
 
   #hero {
+    padding-top: 40px;
     height: 100vh;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.342), rgba(0, 0, 0, 0.342)),
-      url("./images/slider4.PNG")
-        no-repeat center top / cover;
+    background:
+      url("./images/play2.jpg")
+        no-repeat center  center /cover fixed;
+        overflow: hidden;
+      
     color: whitesmoke;
   }
   .container {
@@ -216,6 +219,18 @@
     padding: 8px 64px 8px 24px;
     color: black;
   }
+  .about-item{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: white;
+    padding: 80px 30px;
+    box-shadow: 0 0 9px rgba(0,0,0,0.6);
+    height: 68vh;
+  }
+  .about-item i {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
   @media only screen and (max-width: 768px) {
     html,body {
      max-width: 100%;
@@ -242,6 +257,14 @@
     display: block;
     margin:auto;
     padding-top: 100px;
+    
+  }
+  .container3{
+    width: 80%;
+    display: block;
+    margin:auto;
+    padding-top: 150px;
+    
   }
   .content-section{
     float: left;
@@ -253,7 +276,7 @@
 
   }
   .image-section img{
-    width: 100%;
+    width: 85%;
     height: auto;
   }
   .content-section .title{
@@ -308,14 +331,34 @@
  min-height: 76vh;
    }
  }
+ @media screen and (max-width: 912px){
+  
+   .section{
+    min-height: 55vh;
+ }
+ .section3{
+   min-height: 40vh;
+ }
+ .image-section{
+   margin-top: 10vh;
+ }
+ .container3{
+   padding-top: 200px;
+ }
+
+}
 @media screen  and (max-width: 280px){
   .info2{
   margin-top: 5px;
   
     
   }
-  .btn-readmore{
-    display: none;
+  .about-item{
+    height: 85vh;
+  }
+ 
+  .info{
+    height: 83vh;
   }
 }
   @media screen and (max-width: 768px){
@@ -327,6 +370,12 @@
     display: block;
     margin:auto;
     padding-top:50px;
+  }
+  .container3{
+    width: 80%;
+    display: block;
+    margin:auto;
+    padding-top:200px;
   }
   .content-section{
     float:none;
@@ -342,10 +391,7 @@
   }
   .image-section img{
 
-    width: 100%;
-    height: auto;
-    display: block;
-    margin:auto;
+    display: none;
   }
   .content-section .title{
     text-align: center;
