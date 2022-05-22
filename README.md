@@ -1,2 +1,2 @@
 # arklight
-code for school website
+code for school website made together with bootstrap
