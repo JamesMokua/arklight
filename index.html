@@ -16,6 +16,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    
     <script src=
     'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
         </script>
@@ -25,6 +26,8 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
+       	<!-- jquery cdn -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <title>Arklight International School</title>
@@ -61,6 +64,25 @@
                 <a class="nav-link" href="admissions.html">Admissions</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="activities.html">Activities</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="gallery.html"
+                  >Gallery</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  News
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="news.html">News</a></li>
+                  <li><a class="dropdown-item" href="careers.html">Careers</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
               </li>
             </ul>
@@ -69,18 +91,57 @@
       </nav>
     </section>
     <main>
-    <section id="hero">
-      <div class="container">
-        <div class="info">
-          <h1 class="info2">Arklight International School</h1>
-          <p>
-            We Integrate Montessori approach of learning with the British
-            National Curriculum for our Early Years Foundation Key Stage.
-          </p>
-          <a href="#about" class="btn-readmore">See More</a>
+     	<!-- slider banner	 -->
+      
+       <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="imgs">
+            <img class="d-block w-100" src="./images/curriculum1.jpeg" alt="First slide">
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Welcome to</h1>
+              <h1>Arklight International School</h1>
+              <p> We Integrate Montessori approach of learning with the British
+                National Curriculum for our Early Years Foundation Key Stage.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="imgs">
+            <img class="d-block w-100" src="./images/artday5.jpeg" alt="Second slide">
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+            	<h1>VISION</h1>
+			      		<p>Arklight envisions its learners to be individuals with desirable values
+                  and to be confident to face life challenges</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="imgs">
+            <img class="d-block w-100" src="./images/artday9.jpeg" alt="Third slide">
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Why Us</h1>
+              <p>  At Ark Light, we believe that strong Christian spiritual development
+                helps a child to take the first step in the educational journey with
+                enthusiasm, pleasure and confidence.</p>
+            </div>
+          </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-    </section>
     <section id="about" class="section">
       <div class="container2">
         <div class="content-section">
@@ -131,7 +192,7 @@
                 <h3>VISION</h3>
                 <p>
                   Arklight envisions its learners to be individuals with desirable values
-        and to be confident to face life challanges
+        and to be confident to face life challenges
                 </p>
               </div>
             </div>
@@ -350,7 +411,7 @@
               </div>
               <div>
                 Email<br />
-                info@arklightinternational.com
+                info@arklightinternational.co.ke
               </div>
             </div>
 
@@ -395,6 +456,7 @@
         </div>
       </footer>
     </section>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
